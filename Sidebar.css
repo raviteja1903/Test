@@ -1,0 +1,213 @@
+ 
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 16rem;
+    background-color: #111827;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: width 0.3s ease-in-out;
+}
+  
+.sidebar.closed {
+    width: 4rem;
+    padding: 1rem 0.5rem;
+}
+
+ 
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+  
+.sidebar-logo img {
+    width: 107px;
+    height: 111px;
+    margin-right: 0.5rem;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+  
+.sidebar.closed .sidebar-logo img {
+    display: none;
+
+}
+.title-name{
+    font-style:italic;
+      font-size: 1.2rem;
+      margin-left: -22px;
+}
+
+.collapsed-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+}
+
+/* .collapsed-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  } */
+  
+
+  /* .collapsed-logo .logo-img {
+    width: 40px;
+    height: auto;
+  } */
+
+.sidebar.closed .sidebar-logo span:not(.collapsed-logo) {
+    display: none;
+}
+
+ 
+.toggle-btn {
+    position: absolute;
+    top: 31px;
+    left: 90%;  
+    background: #111827;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    
+}
+
+.toggle-btn:hover {
+    background: #374151;
+    
+}
+.sidebar.closed .toggle-btn {
+    transform: rotate(180deg);
+}
+
+ 
+.new-thread-btn {
+    margin-top: 1.4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937;
+    padding: 0.5rem;
+    border-radius: 8.5rem;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.new-thread-btn:hover {
+    background-color: #374151;
+    border-color: rgb(64, 234, 234);
+}
+
+.new-thread-btn kbd {
+    background-color: #374151;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 4px;
+}
+
+.sidebar.closed .new-thread-btn {
+    justify-content: center;
+}
+
+.sidebar.closed .new-thread-btn kbd {
+    display: none;
+}
+
+ 
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 17px;
+    gap: 10px;
+    margin: 10px;
+    transition: background 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #1f2937;
+}
+
+.sidebar.closed .nav-item span {
+    display: none;
+}
+
+ 
+.auth-buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+ 
+.sign-up {
+    background-color: #3b82f6;
+    width: 265px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.sign-up:hover {
+    background-color: #2563eb;
+}
+
+.login {
+    width: 265px;
+    padding: 0.5rem;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+
+.login:hover {
+    background-color: #1f2937;
+    color: white;
+}
+
+ 
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.icon-btn:hover {
+    opacity: 0.8;
+}
+ 
+  
